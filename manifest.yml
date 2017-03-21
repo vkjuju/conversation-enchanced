@@ -1,0 +1,14 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: conversation-enchanced
+  host: conversation-enchanced
+  disk_quota: 1024M
+  services:
+  - Discovery-wf
+  env:
+    WORKSPACE_ID: 4ca5ed8d-664e-4e4a-ba9a-b1ef6c350ca2
+    CONVERSATION_USERNAME: ca4ab2da-a240-46fe-a908-7e036c8f24e5
+    CONVERSATION_PASSWORD: hwnvY1rUU66Q
